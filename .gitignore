@@ -1,0 +1,7 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pkl
+.vscode/
+output/
+*.h5
