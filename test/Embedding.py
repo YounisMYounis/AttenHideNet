@@ -37,7 +37,7 @@ for i in range(0, len(cover_paths), batch_size):
 
     for j in range(len(covers)):
         stego_img = processor.denormalize_images(embeddings[j])
-        cv2.imwrite(f'{output_dir}/St_{i + j}.jpg', stego_img)
+        cv2.imwrite(f'{output_dir}/St_{i + j}.bmp', stego_img)
 
         Psnr_Embedding.append(compute_psnr(covers[j], embeddings[j]))
         Mse_Embedding.append(np.mean((covers[j] - embeddings[j])**2))
