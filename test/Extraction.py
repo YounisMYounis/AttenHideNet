@@ -19,7 +19,7 @@ Ex_model = load_model('weights/Extraction_Model.h5')
 processor = ImageProcessor()
 
 # Load image paths
-stego_paths = sorted(glob(os.path.join(stego_dir, "*.jpg")))
+stego_paths = sorted(glob(os.path.join(stego_dir, "*.bmp")))
 secret_paths = sorted(glob(os.path.join(secret_dir, "*.jpg")))
 
 # Storage for metrics
@@ -37,7 +37,7 @@ for i in range(0, len(stego_paths), batch_size):
 
     for j in range(len(secrets)):
         extracted_img = processor.denormalize_images(extractions[j])
-        cv2.imwrite(f'{output_dir}/Rc_{i + j}.jpg', extracted_img)
+        cv2.imwrite(f'{output_dir}/Rc_{i + j}.bmp', extracted_img)
 
         Psnr_Extraction.append(compute_psnr(secrets[j], extractions[j]))
         Mse_Extraction.append(np.mean((secrets[j] - extractions[j])**2))
