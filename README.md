@@ -103,9 +103,11 @@ AttenHideNet/
 
 📜 Citation
 
-This work is currently under review at *Applied Soft Computing*.
-
-Please check back for the final citation or contact the author for updates.
+This work is published at *Applied Soft Computing*.
+Doi:
+https://doi.org/10.1016/j.asoc.2025.113583
+URL:
+https://kwnsfk27.r.eu-west-1.awstrack.me/L0/https:%2F%2Fauthors.elsevier.com%2Fa%2F1lR955aecSzAqm/1/010201980c2b6e49-22ee8e96-4257-4154-af0d-c6dd40470144-000000/kS7BgjBvRy7MQ5w86Lz66LDf0YI=434
 
 
 📬 Contact
